@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+
+span { font-size: 22.5px; }
+
+h2 { color: hsl(234, 12%, 34%); }
+
+p { color: hsl(229, 6%, 66%); }
+
+header p{ margin-top: 1rem; }
+
+main p{ font-size: 0.75rem; }
+
+
+header{
+    text-align: center;
+    margin: 5rem 23rem ; 
+}
+main{
+    display: flex;
+    column-gap: 2em;
+    justify-content: center;
+    margin: 5rem 10rem;
+    align-items: center; 
+}
+.vertical{
+    display: flex;
+    row-gap: 2em;
+    flex-direction: column;
+}
+
+.card{
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-color: white;   
+    box-shadow: 0em 0.5rem 0.6rem rgb(194, 192, 192);
+}
+
+#card1{ border-top: 0.25rem solid hsl(180, 62%, 55%); }
+#card2{ border-top: 0.25rem solid hsl(0, 78%, 62%); }
+#card3{ border-top: 0.25rem solid hsl(34, 97%, 64%); }
+#card4{ border-top: 0.25rem solid hsl(212, 86%, 64%); }
+
+img{
+    margin-top: 2rem;
+    margin-left: 11rem;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width:376px) {
+    
+    header{
+        margin:5rem 2rem;
+    }
+    .vertical{
+        display: block;
+    }
+    main{
+        /* flex-direction: column; */
+        display: block;
+        margin: 2em;
+        margin-bottom: 5rem;
+    }
+    .card{
+        margin: 2em 0em;
+    }
+}
+
+
